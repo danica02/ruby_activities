@@ -1,6 +1,6 @@
 class Confection
     def prepare
-        puts "Baking at 350 degrees for 25 miuts."
+        puts "Baking at 350 degrees for 25 minutes."
     end
 end
 
