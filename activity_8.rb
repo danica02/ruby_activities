@@ -1,11 +1,23 @@
 def unique_in_order(iterable)
 newArray = []
+str = nil
 
-    if iterable.is_a?(String)
-        iterable.split("").each {|char| puts char}
-    else
-        newArray.push iterable
+    if iterable.kind_of?(Array)
+        str = iterable
+    else str = iterable.split("")
     end
+
+    str.each {|x|
+    if newArray.length == 0
+        newArray.push x
+    else 
+        if newArray.include?(x)
+        else
+            newArray.push x
+        end
+    end
+    }
+
     puts newArray
 end
 
