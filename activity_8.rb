@@ -2,14 +2,14 @@ def unique_in_order(iterable)
 newArray = []
 
     if iterable.is_a?(Array)
-        iterable
+        newArray.push iterable
     else
         iterable.each_char do |x|
             return false if newArray.include? x
             newArray.push x
         end
     end
-    puts newArray
+    puts newArray.length
 end
 
 unique_in_order('AAAABBBCCDAABBB')
